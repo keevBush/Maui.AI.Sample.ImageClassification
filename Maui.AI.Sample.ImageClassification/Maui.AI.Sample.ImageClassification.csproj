@@ -58,6 +58,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\ProductSans-Bold.ttf" />
+	  <None Remove="Resources\Fonts\ProductSans-Medium.ttf" />
+	  <None Remove="Resources\Fonts\ProductSans-Regular-Italic.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -67,5 +73,10 @@
     <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.TensorFlow" Version="3.0.1" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.16.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Splashscreen.xaml.cs">
+      <DependentUpon>Splashscreen.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

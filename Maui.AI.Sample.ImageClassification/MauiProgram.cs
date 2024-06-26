@@ -11,8 +11,11 @@ namespace Maui.AI.Sample.ImageClassification
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("ProductSans-Bold.ttf", "ProductSansBold");
+                    fonts.AddFont("ProductSans-Medium.ttf", "ProductSansMedium");
+                    fonts.AddFont("ProductSans-Regular-Italic.ttf", "ProductSansRegularItalic");
+                    //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
 #if DEBUG
