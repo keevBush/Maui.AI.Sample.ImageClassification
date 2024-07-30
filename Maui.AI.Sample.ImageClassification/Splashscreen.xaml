@@ -2,7 +2,8 @@
 <ContentPage
     x:Class="Maui.AI.Sample.ImageClassification.Splashscreen"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.NavBarIsVisible="False">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
             <GradientStop Offset="-0.10" Color="#81C8F7" />
@@ -11,32 +12,13 @@
             <GradientStop Offset="1.05" Color="#0CB539" />
         </LinearGradientBrush>
     </ContentPage.Background>
-    <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Image
-                Aspect="AspectFit"
-                HeightRequest="185"
-                SemanticProperties.Description="dot net bot in a race car number eight"
-                Source="dotnet_bot.png" />
+    <Grid Padding="30,0" RowDefinitions="*,auto">
 
-            <Label
-                SemanticProperties.HeadingLevel="Level1"
-                Style="{StaticResource Headline}"
-                Text="Hello, World!" />
-
-            <Label
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                SemanticProperties.HeadingLevel="Level2"
-                Style="{StaticResource SubHeadline}"
-                Text="Welcome to &#10;.NET Multi-platform App UI" />
-
-            <Button
-                x:Name="CounterBtn"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />
-        </VerticalStackLayout>
-    </ScrollView>
+        <ActivityIndicator
+            Grid.Row="1"
+            IsRunning="True"
+            Opacity="0.7"
+            Color="White" />
+    </Grid>
 
 </ContentPage>

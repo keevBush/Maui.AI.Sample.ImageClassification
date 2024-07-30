@@ -1,4 +1,6 @@
-﻿namespace Maui.AI.Sample.ImageClassification
+﻿using Maui.AI.Sample.ImageClassification.Views;
+
+namespace Maui.AI.Sample.ImageClassification
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new MainPage();
         }
     }
 }
